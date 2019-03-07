@@ -27,6 +27,6 @@ sh "docker push gikonyogiks/MartinGikonyoTest:version1"
 
 stage('Run Container')
 {
- docker container run  --detach --publish 6683:6683 --name devopstest gikonyogiks/MartinGikonyoTest:version1
+sh "docker container run  --detach --publish 6683:6683 --name devopstest gikonyogiks/MartinGikonyoTest:version1"
 }
 }
