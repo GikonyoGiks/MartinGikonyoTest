@@ -19,7 +19,8 @@ stage('Build Docker Image and push image to DockerHub')
 sh "sudo docker build -t martingikonyotest:version1 ."
 }
   
-stage('Docker login to hub and push the image'){
+stage('Docker login to hub and push the image')
+{
 sh "sudo docker login -u 'gikonyogiks' -p 'L@ndrover2018'"
 sh "sudo docker tag martingikonyotest:version1 gikonyogiks/martingikonyotest:version1"
 sh "sudo docker push gikonyogiks/martingikonyotest:version1"
