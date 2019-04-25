@@ -9,6 +9,7 @@ checkout scm
 stage('Show me the files')
 {
 sh "ls -l"
+sh "pwd"
 }
 
 
